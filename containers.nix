@@ -48,6 +48,16 @@
       openssh = {
        enable = true;
        passwordAuthentication = false;
+       hostKeys = [
+        {
+         path = "/var/lib/gitea/host_keys/ssh_host_ed25519_key";
+         type = "ed25519";
+        }
+        {
+         path = "/var/lib/gitea/host_keys/ssh_host_rsa_key";
+         type = "rsa";
+        }
+       ];
       };
       avahi = {
        nssmdns = true;
