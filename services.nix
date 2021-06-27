@@ -18,6 +18,10 @@
   };
  };
  services = {
+  fstrim = {
+   enable = true;
+   interval = "weekly";
+  };
   # List services that you want to enable:
   xserver = {
     enable = false;
