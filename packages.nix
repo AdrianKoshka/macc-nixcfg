@@ -20,5 +20,6 @@
      file
      unzip
      powershell
+     hwloc
    ];
 }
