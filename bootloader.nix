@@ -4,9 +4,6 @@
  boot = {
   tmpOnTmpfs = true;
   kernelPackages = pkgs.linuxPackages_latest;
-  blacklistedKernelModules = [
-   "igbvf"
-  ];
   loader = {
     systemd-boot.enable = false;
     efi = {
