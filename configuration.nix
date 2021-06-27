@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./bootloader.nix
+      ./filesystems.nix
       ./networking.nix
       ./services.nix
       ./virtualization.nix
