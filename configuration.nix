@@ -13,7 +13,7 @@
       ./networking.nix
       ./services.nix
       ./virtualization.nix
-      ./containers.nix
+      ./gitea.nix
       ./packages.nix
       ./users.nix
       ./misc.nix
