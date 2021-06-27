@@ -21,5 +21,6 @@
      unzip
      powershell
      hwloc
+     cryptsetup
    ];
 }
