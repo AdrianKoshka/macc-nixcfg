@@ -18,7 +18,19 @@
     config = { config, pkgs, ... }: {
      networking = {
        hostName = "macc-gitea";
-       firewall.enable = false;
+       firewall = { 
+        enable = true;
+        allowedTCPPorts = [
+         22
+         3000
+         5353
+        ];
+        allowedUDPPorts = [
+         22
+         3000
+         5353
+        ];
+       };
        useDHCP = false;
        interfaces.enp0s0f0v1.useDHCP = true;
      };
