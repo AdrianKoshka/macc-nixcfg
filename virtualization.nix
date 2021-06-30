@@ -10,5 +10,8 @@
     enable = true;
     qemuOvmf = true;
    };
+   oci-containers = {
+    backend = "podman";
+  };
  };
 }
