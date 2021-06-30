@@ -1,6 +1,10 @@
 { config, pkgs, ...}:
 
 {
+ nix.gc = {
+  automatic = true;
+  dates = "00:00";
+ };
  systemd = {
   services = {
    intelvfs = {
