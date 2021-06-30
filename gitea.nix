@@ -5,7 +5,7 @@
   ephemeral = true;
   autoStart = true;
   interfaces = [
-    "enp0s0f0v1"
+    "enp0s0f0v0"
   ];
   bindMounts = {
    "/var/lib/gitea" = {
@@ -30,7 +30,7 @@
       ];
      };
      useDHCP = false;
-     interfaces.enp0s0f0v1.useDHCP = true;
+     interfaces.enp0s0f0v0.useDHCP = true;
    };
    services = {
     gitea = {
