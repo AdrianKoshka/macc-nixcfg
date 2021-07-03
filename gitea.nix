@@ -46,6 +46,8 @@
     openssh = {
      enable = true;
      passwordAuthentication = false;
+     permitRootLogin = "no";
+     startWhenNeeded = true;
      hostKeys = [
       {
        path = "/var/lib/gitea/host_keys/ssh_host_ed25519_key";
