@@ -22,5 +22,7 @@
      powershell
      hwloc
      cryptsetup
+     dig
+     smartmontools
    ];
 }
