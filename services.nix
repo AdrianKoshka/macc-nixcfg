@@ -41,6 +41,9 @@
   avahi = {
     nssmdns = true;
     enable = true;
+    interfaces = [
+     "enp0s0f0"
+    ];
     ipv4 = true;
     ipv6 = true;
     extraServiceFiles = { 
