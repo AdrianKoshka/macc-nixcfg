@@ -52,8 +52,8 @@
    services = {
     gitea = {
      enable = true;
-     domain = "macc-gitea.local";
-     rootUrl = "http://macc-gitea.local:3000";
+     domain = "gitea.local";
+     rootUrl = "http://gitea.local:3000";
      httpPort = 3000;
      ssh = {
       enable = true;
