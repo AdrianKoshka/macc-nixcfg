@@ -22,6 +22,9 @@
   };
  };
  services = {
+  smartd = {
+   enable = true;
+  };
   fstrim = {
    enable = true;
    interval = "weekly";
