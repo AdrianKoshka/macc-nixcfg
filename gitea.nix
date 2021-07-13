@@ -15,7 +15,13 @@
   };
   config = { config, pkgs, ... }: {
    networking = {
-     hostName = "macc-gitea";
+     hostName = "gitea";
+     domain = "home.arpa";
+     nameservers = [
+      "192.168.10.219"
+      "192.168.10.1"
+      "1.1.1.1"
+     ];
      firewall = { 
       enable = true;
       allowedTCPPorts = [
@@ -30,7 +36,18 @@
       ];
      };
      useDHCP = false;
-     interfaces.enp0s0f0v0.useDHCP = true;
+     defaultGateway = "192.168.10.1";
+     interfaces = { 
+      enp0s0f0v0 = {
+       useDHCP = false;
+       ipv4.addresses = [
+        {
+         address = "192.168.10.253";
+         prefixLength = 24;
+        }
+       ];
+      };
+     };
    };
    services = {
     gitea = {
